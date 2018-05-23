@@ -1,0 +1,3 @@
+--采用SpringBoot、MyBatis框架
+--使用Spring Boot热加载
+--访问路径：http://127.0.0.1:8081/user/getUserList.do

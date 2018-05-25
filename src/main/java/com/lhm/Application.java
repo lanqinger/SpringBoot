@@ -7,6 +7,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 
 @SpringBootApplication
 @MapperScan(basePackages = {"com.lhm.dao"})
+@EnableScheduling
 public class Application
 {
     public static void main( String[] args )

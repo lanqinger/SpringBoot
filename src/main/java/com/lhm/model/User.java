@@ -1,12 +1,13 @@
 package com.lhm.model;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
-
-public class User {
+import java.util.Date;
+public class User implements Serializable{
     private String id;
     private String accountNumber;
     private String password;
-    private LocalDateTime createDate;
+    private String createDate;
 
     public String getId() {
         return id;
@@ -32,11 +33,11 @@ public class User {
         this.password = password;
     }
 
-    public LocalDateTime getCreateDate() {
+    public String getCreateDate() {
         return createDate;
     }
 
-    public void setCreateDate(LocalDateTime createDate) {
+    public void setCreateDate(String createDate) {
         this.createDate = createDate;
     }
 }

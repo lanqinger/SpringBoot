@@ -17,6 +17,33 @@
         SELECT COUNT(1) FROM user_info;
     </select>
 
+    <select id="getUserById" parameterType="java.lang.String" resultMap="BaseResultMap">
+        SELECT id, account_number, password, create_date FROM user_info t WHERE id=#{id}
+    </select>
+
+    <delete id="deleteByIds" parameterType="java.util.List">
+        delete from user_info where id in
+        <foreach collection="list" item="item" index="index" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </delete>
+
+    <update id="updateUser" parameterType="com.lhm.model.User">
+        UPDATE user_info t
+        <set>
+            <if test="accountNumber != null" >
+                t.account_number=#{accountNumber},
+            </if>
+            <if test="password != null" >
+                t.password=#{password},
+            </if>
+            <if test="createDate != null" >
+                t.create_date=#{createDate}
+            </if>
+        </set>
+        WHERE t.id = #{id}
+    </update>
+
     <select id="getRoleIds" parameterType="java.lang.String" resultType="java.lang.String" >
         SELECT group_concat(role_id)AS roleIds FROM user_role WHERE user_id = #{userId,jdbcType=VARCHAR}
     </select>
@@ -35,8 +62,6 @@
         </foreach>
     </insert>
 
-    <delete id="delUserByRoleId" parameterType="java.lang.String">
-        delete from user_role where role_id =#{roleId,jdbcType=VARCHAR}
-    </delete>
+
 
 </mapper>

@@ -40,6 +40,24 @@ spring:
       username: dev
       password: dev123456
 
+---
+
+################################REDIS###############################
+spring:
+  profiles: dev
+  cache:
+    type: REDIS
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 0
+    database: 0
+    pool:
+      max-active: 100
+      max-wait: -1
+      max-idle: 8
+      min-idle: 0
+
 logging:
   level:
     ROOT: INFO
@@ -47,8 +65,8 @@ logging:
       xncoding: DEBUG
   file: D:/logs/SpringBootDemo.log
 
----
 
+---
 #####################################################################
 ########################  测试环境profile  ##########################
 #####################################################################

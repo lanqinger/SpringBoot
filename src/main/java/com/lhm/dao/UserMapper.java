@@ -3,6 +3,7 @@ package com.lhm.dao;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 import com.lhm.model.User;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
@@ -14,4 +15,12 @@ public interface UserMapper extends BaseMapper<User> {
 
     //@Select("SELECT count(1) FROM user_info ")
     int countRows();
+
+    User getUserById(String id);
+
+    void updateUser(User user);
+
+    void deleteByIds(List<String> ids);
+
+
 }

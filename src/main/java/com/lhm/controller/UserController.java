@@ -2,15 +2,17 @@ package com.lhm.controller;
 
 import com.lhm.model.User;
 import com.lhm.service.UserService;
+import com.lhm.utils.MessageUtil;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -19,6 +21,7 @@ import java.util.*;
 /**
  *  默认返回JSON字符串
  */
+@Api(value = "UserController", description = "用户管理")
 @RestController
 @RequestMapping(value="/user",produces="text/plain;charset=utf-8")
 public class UserController {
@@ -27,9 +30,9 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    @ApiOperation(value = "用户列表")
     @GetMapping(value="getUserList.do")
-    public String index() {
-
+    public String index(User user) {
         Map<String, Object> param = new HashMap<String, Object>();
         List<User> userList = userService.listUsers(param);
         int count = userService.countRows();
@@ -40,41 +43,48 @@ public class UserController {
     }
 
     @GetMapping(value="getUserById.do")
-    public String getUserById() {
+    @ApiOperation(value = "根据用户ID获取用户信息")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "string",paramType = "query"),
+    })
+    public String getUserById(String id) {
+        User user = userService.getUserById(id);
+        if (user == null) {
+            return MessageUtil.fail("用户不存在存在");
+        }
         JSONObject jsonObject = new JSONObject();
-        User user = userService.getUserById("2");
         jsonObject.put("user", user);
-        return jsonObject.toString();
+        return MessageUtil.success(jsonObject);
     }
 
-    @GetMapping(value = "update.do")
-    public String update() {
-        User user = userService.getUserById("2");
-        user.setPassword("123456");
-        userService.updateUser(user);
-        User user2 = userService.getUserById("3");
-        LocalDateTime dateTime = LocalDateTime.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        String createDate = dateTime.format(formatter);
-        user2.setCreateDate(createDate);
-        userService.updateUser(user2);
+    @PostMapping(value = "update.do")
+    @ApiOperation(value = "修改用户信息")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "string",paramType = "query"),
+    })
+    public String update(User user) {
+        try {
+            userService.updateUser(user);
+            user = userService.getUserById(user.getId());
+        } catch (Exception e) {
+            logger.error("修改用户信息异常：" + e.getMessage());
+            return MessageUtil.fail("修改用户信息失败");
+        }
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("user1", user);
-        jsonObject.put("user2", user2);
-        return jsonObject.toString();
+        jsonObject.put("user", user);
+        return MessageUtil.success(jsonObject);
     }
 
-    @GetMapping(value = "delete.do")
-    public String delete() {
-        List<String> ids = new ArrayList<>();
-        ids.add("4");
-        ids.add("5");
-        User user = userService.getUserById("4");
-        User user2 = userService.getUserById("5");
-        userService.deleteByIds(ids);
-        JSONObject jsonObject = new JSONObject();
-        jsonObject.put("ids" ,ids);
-        return jsonObject.toString();
+    @PostMapping(value = "delete.do")
+    @ApiOperation(value = "批量删除用户信息")
+    public String delete(@RequestParam(required=true)List<String> ids) {
+        try {
+            userService.deleteByIds(ids);
+            return MessageUtil.setComSuccessMess("删除成功");
+        } catch (Exception e) {
+            logger.error("用户删除异常：" + e.getMessage());
+            return MessageUtil.setComFailMess("删除失败");
+        }
     }
 
 }

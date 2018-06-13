@@ -1,30 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="78b1e09d-06c4-4053-9b8c-abd6d59bca8b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_1_5_4_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_4_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_1_2_4_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_8_4_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_3_9_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" />
+    <list default="true" readonly="true" id="78b1e09d-06c4-4053-9b8c-abd6d59bca8b" name="Default" comment="swagger">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_xncoding_springfox_swagger_ui_2_7_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_7_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_7_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_7_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_7_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_7_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_7_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_13.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_13.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_6_14.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_1_0_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_analysis_5_0_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_5_0_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_util_5_0_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_parboiled_parboiled_core_1_1_7.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_parboiled_parboiled_java_1_1_7.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_pegdown_pegdown_1_6_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_9_11.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/lhm/config/Swagger2Config.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/lhm/controller/LoginController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/lhm/utils/MessageUtil.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_3.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change beforePath="$PROJECT_DIR$/SpringBootDemo.iml" afterPath="$PROJECT_DIR$/SpringBootDemo.iml" />
       <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lhm/dao/UserMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/lhm/dao/UserMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lhm/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/lhm/model/User.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lhm/model/mapper/UserMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lhm/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/lhm/service/UserService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lhm/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/lhm/service/impl/UserServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lhm/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/lhm/controller/UserController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lhm/controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/lhm/controller/UserController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lhm/dao/UserMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/lhm/dao/UserMapper.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lhm/model/User.class" afterPath="$PROJECT_DIR$/target/classes/com/lhm/model/User.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lhm/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/lhm/service/UserService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lhm/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/lhm/service/impl/UserServiceImpl.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -41,7 +50,7 @@
       <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lhm/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
+            <state relative-caret-position="180">
               <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding>
                 <element signature="e#1004#1005#0" expanded="true" />
@@ -51,14 +60,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lhm/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+            <state relative-caret-position="1260">
+              <caret line="85" column="54" lean-forward="true" selection-start-line="85" selection-start-column="54" selection-end-line="85" selection-end-column="54" />
               <folding>
-                <element signature="e#992#1008#0" expanded="true" />
+                <element signature="e#1102#1118#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lhm/controller/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="57" column="53" lean-forward="true" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="26" column="42" lean-forward="false" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,15 +107,16 @@
       <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1440">
-              <caret line="48" column="13" lean-forward="false" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+            <state relative-caret-position="173">
+              <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
               <folding>
-                <marker date="1528794688572" expanded="true" signature="672:748" ph="SELECT id, a... user_info" />
-                <marker date="1528794688572" expanded="true" signature="831:861" ph="SELECT COUNT... user_info" />
-                <marker date="1528794688572" expanded="true" signature="975:1055" ph="SELECT id, a... user_info" />
-                <marker date="1528794688572" expanded="true" signature="1140:1171" ph="delete from user_role... " />
-                <marker date="1528794688572" expanded="true" signature="1395:1791" ph="UPDATE user_info... " />
-                <marker date="1528794688572" expanded="true" signature="1908:2004" ph="SELECT group... user_role" />
+                <marker date="1528870521569" expanded="true" signature="1152:1206" ph="SELECT id, a... user_info" />
+                <marker date="1528870521569" expanded="true" signature="1328:1358" ph="SELECT COUNT... user_info" />
+                <marker date="1528870521569" expanded="true" signature="1328:1360" ph="SELECT COUNT... user_info" />
+                <marker date="1528870521569" expanded="true" signature="1512:1581" ph="SELECT id, a... user_info" />
+                <marker date="1528870521569" expanded="true" signature="1666:1697" ph="delete from user_role... " />
+                <marker date="1528870521569" expanded="true" signature="1921:2317" ph="UPDATE user_info... " />
+                <marker date="1528870521569" expanded="true" signature="2434:2530" ph="SELECT group... user_role" />
               </folding>
             </state>
           </provider>
@@ -100,7 +132,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Swagger2Config.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lhm/config/Swagger2Config.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="24" column="9" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -121,16 +170,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/lhm/Application.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/lhm/model/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/lhm/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lhm/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lhm/dao/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lhm/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lhm/utils/MessageUtil.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lhm/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lhm/config/Swagger2Config.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lhm/controller/UserController.java" />
       </list>
     </option>
@@ -155,6 +207,11 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="SpringBootDemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SpringBootDemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
       </expand>
       <select />
     </treeState>
@@ -168,7 +225,9 @@
     <option name="width" value="1942" />
     <option name="height" value="1042" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -228,6 +287,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lhm" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringBootDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringBootDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lhm" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -272,6 +340,15 @@
               <item name="SpringBootDemo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lhm" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringBootDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringBootDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -294,7 +371,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/yypt/SpringBootBucket/springboot-swagger2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -306,11 +383,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lhm.config" />
       <recent name="com.lhm.dao" />
       <recent name="com.lhm.model" />
       <recent name="com.lhm.service.impl" />
       <recent name="com.lhm.service" />
-      <recent name="com.lhm.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\SpringBoot\SpringBootDemo\src\main\resources" />
@@ -440,7 +517,7 @@
       <workItem from="1528447356802" duration="3520000" />
       <workItem from="1528677488813" duration="7700000" />
       <workItem from="1528763872573" duration="14258000" />
-      <workItem from="1528851639278" duration="1656000" />
+      <workItem from="1528851639278" duration="17164000" />
     </task>
     <task id="LOCAL-00001" summary="使用xml文件配置编写sql">
       <created>1528450183665</created>
@@ -463,45 +540,51 @@
       <option name="project" value="LOCAL" />
       <updated>1528853525094</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="新增redis缓存">
+      <created>1528853772418</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1528853772418</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32444000" />
+    <option name="totallyTimeSpent" value="47952000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881773" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881773" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28395063" sideWeight="0.50215983" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23950617" sideWeight="0.5053996" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34852216" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6283951" sideWeight="0.49784017" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839507" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881773" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23596112" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3530864" sideWeight="0.49460045" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881773" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839507" sideWeight="0.49784017" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881773" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34852216" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22222222" sideWeight="0.49784017" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839507" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881773" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23596112" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17530864" sideWeight="0.49568033" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839507" sideWeight="0.49784017" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16995074" sideWeight="0.6522678" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46674877" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -520,7 +603,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/lhm/controller/LoginController.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/lhm/controller/UserController.java</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -553,12 +650,13 @@
         <state relative-caret-position="1440">
           <caret line="48" column="13" lean-forward="false" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
           <folding>
-            <marker date="1528794688572" expanded="true" signature="672:748" ph="SELECT id, a... user_info" />
-            <marker date="1528794688572" expanded="true" signature="831:861" ph="SELECT COUNT... user_info" />
-            <marker date="1528794688572" expanded="true" signature="975:1055" ph="SELECT id, a... user_info" />
-            <marker date="1528794688572" expanded="true" signature="1140:1171" ph="delete from user_role... " />
-            <marker date="1528794688572" expanded="true" signature="1395:1791" ph="UPDATE user_info... " />
-            <marker date="1528794688572" expanded="true" signature="1908:2004" ph="SELECT group... user_role" />
+            <marker date="1528870521569" expanded="true" signature="1152:1206" ph="SELECT id, a... user_info" />
+            <marker date="1528870521569" expanded="true" signature="1328:1358" ph="SELECT COUNT... user_info" />
+            <marker date="1528870521569" expanded="true" signature="1328:1360" ph="SELECT COUNT... user_info" />
+            <marker date="1528870521569" expanded="true" signature="1512:1581" ph="SELECT id, a... user_info" />
+            <marker date="1528870521569" expanded="true" signature="1666:1697" ph="delete from user_role... " />
+            <marker date="1528870521569" expanded="true" signature="1921:2317" ph="UPDATE user_info... " />
+            <marker date="1528870521569" expanded="true" signature="2434:2530" ph="SELECT group... user_role" />
           </folding>
         </state>
       </provider>
@@ -576,7 +674,7 @@
         <state relative-caret-position="1950">
           <caret line="79" column="16" lean-forward="false" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
           <folding>
-            <element signature="e#992#1008#0" expanded="true" />
+            <element signature="e#1102#1118#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -609,7 +707,7 @@
         <state relative-caret-position="900">
           <caret line="46" column="11" lean-forward="false" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
           <folding>
-            <element signature="e#992#1008#0" expanded="true" />
+            <element signature="e#1102#1118#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -627,12 +725,13 @@
         <state relative-caret-position="150">
           <caret line="5" column="59" lean-forward="true" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
           <folding>
-            <marker date="1528794688572" expanded="true" signature="672:748" ph="SELECT id, a... user_info" />
-            <marker date="1528794688572" expanded="true" signature="831:861" ph="SELECT COUNT... user_info" />
-            <marker date="1528794688572" expanded="true" signature="975:1055" ph="SELECT id, a... user_info" />
-            <marker date="1528794688572" expanded="true" signature="1140:1171" ph="delete from user_role... " />
-            <marker date="1528794688572" expanded="true" signature="1395:1791" ph="UPDATE user_info... " />
-            <marker date="1528794688572" expanded="true" signature="1908:2004" ph="SELECT group... user_role" />
+            <marker date="1528870521569" expanded="true" signature="1152:1206" ph="SELECT id, a... user_info" />
+            <marker date="1528870521569" expanded="true" signature="1328:1358" ph="SELECT COUNT... user_info" />
+            <marker date="1528870521569" expanded="true" signature="1328:1360" ph="SELECT COUNT... user_info" />
+            <marker date="1528870521569" expanded="true" signature="1512:1581" ph="SELECT id, a... user_info" />
+            <marker date="1528870521569" expanded="true" signature="1666:1697" ph="delete from user_role... " />
+            <marker date="1528870521569" expanded="true" signature="1921:2317" ph="UPDATE user_info... " />
+            <marker date="1528870521569" expanded="true" signature="2434:2530" ph="SELECT group... user_role" />
           </folding>
         </state>
       </provider>
@@ -713,7 +812,7 @@
         <state relative-caret-position="480">
           <caret line="32" column="27" lean-forward="false" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
           <folding>
-            <element signature="e#992#1008#0" expanded="true" />
+            <element signature="e#1102#1118#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -767,37 +866,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="2" column="48" lean-forward="false" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/lhm/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="84" column="17" lean-forward="false" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="68" column="3" lean-forward="false" selection-start-line="68" selection-start-column="3" selection-end-line="68" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -833,26 +906,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lhm/service/UserService.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/net/URLClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="19" />
+        <state relative-caret-position="-691">
+          <caret line="390" column="50" lean-forward="true" selection-start-line="390" selection-start-column="50" selection-end-line="390" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1440">
-          <caret line="48" column="13" lean-forward="false" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-          <folding>
-            <marker date="1528794688572" expanded="true" signature="672:748" ph="SELECT id, a... user_info" />
-            <marker date="1528794688572" expanded="true" signature="831:861" ph="SELECT COUNT... user_info" />
-            <marker date="1528794688572" expanded="true" signature="975:1055" ph="SELECT id, a... user_info" />
-            <marker date="1528794688572" expanded="true" signature="1140:1171" ph="delete from user_role... " />
-            <marker date="1528794688572" expanded="true" signature="1395:1791" ph="UPDATE user_info... " />
-            <marker date="1528794688572" expanded="true" signature="1908:2004" ph="SELECT group... user_role" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="390">
+            <caret line="13" column="54" lean-forward="false" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -864,9 +933,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lhm/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <marker date="1528870521569" expanded="true" signature="1152:1206" ph="SELECT id, a... user_info" />
+            <marker date="1528870521569" expanded="true" signature="1328:1358" ph="SELECT COUNT... user_info" />
+            <marker date="1528870521569" expanded="true" signature="1328:1360" ph="SELECT COUNT... user_info" />
+            <marker date="1528870521569" expanded="true" signature="1512:1581" ph="SELECT id, a... user_info" />
+            <marker date="1528870521569" expanded="true" signature="1666:1697" ph="delete from user_role... " />
+            <marker date="1528870521569" expanded="true" signature="1921:2317" ph="UPDATE user_info... " />
+            <marker date="1528870521569" expanded="true" signature="2434:2530" ph="SELECT group... user_role" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lhm/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
+        <state relative-caret-position="180">
           <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding>
             <element signature="e#1004#1005#0" expanded="true" />
@@ -875,13 +976,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lhm/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="57" column="53" lean-forward="true" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lhm/utils/MessageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="26" column="42" lean-forward="false" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lhm/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        <state relative-caret-position="1260">
+          <caret line="85" column="54" lean-forward="true" selection-start-line="85" selection-start-column="54" selection-end-line="85" selection-end-column="54" />
           <folding>
-            <element signature="e#992#1008#0" expanded="true" />
+            <element signature="e#1102#1118#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lhm/config/Swagger2Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="24" column="9" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>

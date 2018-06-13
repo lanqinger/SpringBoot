@@ -10,3 +10,6 @@ create_date VARCHAR(16),
 PRIMARY KEY (`id`)
 )
 ;
+
+--使用Swagger2访问路径：http://127.0.0.1:8081/swagger-ui.html
+

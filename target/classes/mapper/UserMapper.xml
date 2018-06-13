@@ -8,17 +8,37 @@
         <result column="password" property="password" jdbcType="VARCHAR" />
         <result column="create_date" property="createDate" jdbcType="VARCHAR" />
     </resultMap>
+    
+    <sql id="BaseColumn">
+        id, account_number, password, create_date
+    </sql>
+    
+    <sql id="queryWhere">
+        <where>
+            <if test="id != null" >
+                and t.id = #{id}
+            </if>
+            <if test="accountNumber != null" >
+                and t.account_number = #{accountNumber}
+            </if>
+            <if test="password != null" >
+                and t.password = #{password}
+            </if>
+        </where>
+    </sql>
 
     <select id="listUsers" parameterType="java.util.Map" resultMap="BaseResultMap" >
-        SELECT id, account_number, password, create_date FROM user_info t LIMIT 0,10
+        SELECT <include refid="BaseColumn" /> FROM user_info t
+        <include refid="queryWhere" />
     </select>
 
     <select id="countRows" resultType="java.lang.Integer">
-        SELECT COUNT(1) FROM user_info;
+        SELECT COUNT(1) FROM user_info t
+        <include refid="queryWhere" />
     </select>
 
     <select id="getUserById" parameterType="java.lang.String" resultMap="BaseResultMap">
-        SELECT id, account_number, password, create_date FROM user_info t WHERE id=#{id}
+        SELECT <include refid="BaseColumn" /> FROM user_info t WHERE id=#{id}
     </select>
 
     <delete id="deleteByIds" parameterType="java.util.List">
@@ -47,11 +67,6 @@
     <select id="getRoleIds" parameterType="java.lang.String" resultType="java.lang.String" >
         SELECT group_concat(role_id)AS roleIds FROM user_role WHERE user_id = #{userId,jdbcType=VARCHAR}
     </select>
-
-    <!-- 针对用户id删除该用户对应的所有角色-->
-    <delete id="delRoleByUserId" parameterType="java.lang.String">
-        delete from user_role where user_id =#{userId,jdbcType=VARCHAR}
-    </delete>
 
     <!-- 批量插入用户角色数据-->
     <insert id="insertUserRole" parameterType="java.util.List">

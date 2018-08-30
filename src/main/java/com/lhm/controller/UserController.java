@@ -13,7 +13,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
 
+import javax.servlet.http.HttpServletResponse;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
@@ -85,6 +88,19 @@ public class UserController {
             logger.error("用户删除异常：" + e.getMessage());
             return MessageUtil.setComFailMess("删除失败");
         }
+    }
+
+    @PostMapping(value = "uploadImg.do")
+    @ApiOperation(value = "上传图片")
+    public String uploadImg(@RequestParam(required = false) MultipartFile file, MultipartHttpServletRequest request, HttpServletResponse response) {
+        response.setContentType("text/html;charset=UTF-8");
+        try {
+
+        } catch (Exception e) {
+            logger.error("用户上传图片异常：" + e.getMessage());
+            return MessageUtil.setComFailMess("上传失败");
+        }
+        return MessageUtil.setComFailMess("上传成功！");
     }
 
 }

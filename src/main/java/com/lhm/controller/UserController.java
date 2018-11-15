@@ -42,6 +42,7 @@ public class UserController {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("userList", userList);
         jsonObject.put("count", count);
+        jsonObject.put("result", "success");
         return jsonObject.toString();
     }
 

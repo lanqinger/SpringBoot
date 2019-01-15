@@ -6,14 +6,13 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
@@ -48,23 +47,40 @@ public class UserControllerTest {
         map.put("password", "123");
         ResponseEntity<String> rEntity = restTemplate.exchange(host + endpoint, HttpMethod.GET, httpEntity, String.class, map);
         JSONObject json = JSONObject.fromObject(rEntity.getBody());
+        System.out.println(json);
         assertEquals("success", json.getString("result"));
-        System.out.println(rEntity.getStatusCode() + "," + rEntity.getStatusCodeValue());
     }
 
     @Test
     public void update() {
-        //post请求
-        User user = new User();
-        user.setId("1");
-        user.setPassword("123456");
+        //post json请求
         String endpoint = "update.do";
-        Map map = new HashMap();
-        map.put("user", user);
-        ResponseEntity<User> rEntity = restTemplate.exchange(host + endpoint, HttpMethod.POST, httpEntity, User.class, user);
-        JSONObject json = JSONObject.fromObject(rEntity.getBody().toString());
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        httpEntity = new HttpEntity<>(headers);
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("id", "1");
+        jsonObject.put("password", "123456");
+        HttpEntity<Map<String, Object>> request = new HttpEntity<Map<String, Object>>(jsonObject, httpEntity.getHeaders());
+        ResponseEntity<String> responseEntity = restTemplate.postForEntity(host + endpoint, request, String.class);
+        String result = responseEntity.getBody();
+        JSONObject json = JSONObject.fromObject(result);
+        System.out.println(json);
         assertEquals("success", json.getString("result"));
-
     }
+
+    @Test
+    public void delete() {
+        //删除市场定价 POST请求
+        String endpoint = "delete.do?ids={ids}";
+        Map map = new HashMap();
+        List<String> ids = new ArrayList<>();
+        ids.add("11");
+        map.put("ids", ids);
+        ResponseEntity<String> responseEntity = restTemplate.exchange(host + endpoint, HttpMethod.POST, httpEntity, String.class, map);
+        JSONObject json = JSONObject.fromObject(responseEntity.getBody());
+        assertEquals("success", json.getString("result"));
+    }
+
 
 }
